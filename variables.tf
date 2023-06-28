@@ -1,30 +1,30 @@
 variable "aws_region" {
   type        = string
-  description = "AWSのリージョン"
-  default     = "ap-northeast-1"
+  description = "AWS"
+  default     = "us-east-1"
 }
 
 variable "aws_profile" {
   type        = string
-  description = "AWSのプロファイル名"
-  default     = "sandbox"
+  description = "AWS profile"
+  default     = "default"
 }
 
 variable "app_name" {
   type        = string
-  description = "製品名"
+  description = "app_name"
   default     = "app"
 }
 
 variable "app_instance" {
   type        = string
-  description = "インスタンスの名前"
+  description = "app_instance"
   default     = "instance"
 }
 
 variable "app_stage" {
   type        = string
-  description = "ステージ名称(例えば、dev, prod, qa, etc)"
+  description = "app_stage(env: dev, prod, qa, etc)"
   default     = "dev"
 }
 
@@ -33,7 +33,7 @@ variable "global_tags" {
 
   default = {
     Provisioner = "Terraform"
-    Owner       = "あなたのお名前"
+    Owner       = "Jenya"
   }
 }
 
