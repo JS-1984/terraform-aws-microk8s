@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greenroad-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: greenroad
+  template:
+    metadata:
+      labels:
+        app: greenroad
+    spec:
+      containers:
+        - name: greenroad
+          image: localhost:32000/greenroad:latest
+          ports:
+            - containerPort: 80
