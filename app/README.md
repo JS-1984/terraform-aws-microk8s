@@ -17,5 +17,5 @@ microk8s ctr image import greenroad:latest
 Verify that the image is imported successfully:
 
 ```
-  microk8s ctr images ls
+microk8s ctr images ls
 ```
